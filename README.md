@@ -4,16 +4,22 @@ CLI-утилита для формирования отчетов по макр�
 Сейчас реализован отчет `average-gdp`: считает среднее ВВП по странам по всем переданным файлам и сортирует результат по
 убыванию.
 
+## Установка
+
+```bash
+poetry install
+```
+
 ## Запуск
 
 ```bash
-python -m stafit --files examples/economic1.csv examples/economic2.csv --report average-gdp
+poetry run python -m stafit --files examples/economic1.csv examples/economic2.csv --report average-gdp
 ```
 
 ## Тесты
 
 ```bash
-python -m pytest
+poetry run pytest
 ```
 
 ## Как добавить новый отчет
