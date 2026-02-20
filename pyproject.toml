@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stafit"
+version = "0.1.0"
+description = "CLI для формирования отчетов по макроэкономическим данным."
+authors = ["Artasov <ivanhvalevskey@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "stafit" }]
+
+[tool.poetry.dependencies]
+python = "3.12.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "9.0.2"
+pytest-cov = "7.0.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
